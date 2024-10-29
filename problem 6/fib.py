@@ -1,6 +1,8 @@
 def fibonacci(n):
     fib = 0
     next_fib = 1
+
+    #Add fibs to get next fib
     for target in range(0,n):
         next_fib = fib + next_fib
         fib = next_fib - fib

@@ -1,16 +1,22 @@
 def int_to_reverse_binary(num1):
     binary_val = ''
 
+    #Get binary digits for valid inputs
     while num1 > 0:
         binary_val = binary_val + str(num1 % 2)
         num1 = num1 // 2
     
-    return binary_val;
+    #For nonpositive inputs
+    if binary_val == '':
+        binary_val = '0'
+
+    return binary_val
 
 
 def string_reverse(input_string): 
     reverse_input = ''
     
+    #Append characters in reverse
     for target in range(0,len(input_string)):
         reverse_input = reverse_input + input_string[len(input_string)-target-1]
     
