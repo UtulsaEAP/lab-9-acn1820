@@ -12,7 +12,6 @@ def int_to_reverse_binary(num1):
 
     return binary_val
 
-
 def string_reverse(input_string): 
     reverse_input = ''
     
